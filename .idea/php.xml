@@ -17,6 +17,13 @@
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="02053aa9-81ae-40e7-b454-a75b6330f7af" name="laravel.test" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+        <configuration_options>
+          <configuration_option name="xdebug.client_port" value="9003" />
+          <configuration_option name="xdebug.client_host" value="0.0.0.0" />
+          <configuration_option name="xdebug.mode" value="develop, debug" />
+          <configuration_option name="xdebug.start_with_request" value="yes" />
+          <configuration_option name="xdebug.idekey" value="docker-server" />
+        </configuration_options>
         <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="laravel.test" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
